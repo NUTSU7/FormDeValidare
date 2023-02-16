@@ -1,0 +1,91 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    height: 100%;
+    background: #5897eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regForm {
+    flex: 1;
+    max-width: 500px;
+    max-height: 1500px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title {
+    padding:15px 0;
+}
+
+.regForm h1 {
+    font-size: 28px;
+    font-family: 'Product Sans Medium', sans-serif;
+    text-align: center;
+    color: #464646;
+}
+
+.row {
+    display: flex;
+}
+
+.inputBox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 12px 20px;
+}
+
+input {
+    background-color: #dbdbdb71;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    text-indent: 15px;
+    font-family: 'Product Sans Medium', sans-serif;
+    font-size: 14px;
+}
+
+.btnReg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-family: 'Product Sans Medium', sans-serif;
+    width: auto;
+    min-width: 150px;
+    border-radius: 24px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: #5897eb;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    outline: 0;
+    cursor:pointer;
+}

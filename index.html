@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body></body>
+<section id="page">
+
+    <form class="regForm" method = "post">
+        <div class="title">
+            <h1>Registration Form</h1>
+        </div>
+        <div class="row">
+            <div class="inputBox">
+                <!--<label>Nume</label> -->
+                <input type="text" name="nume" pattern="^[A-Z][a-z]{4,}$" placeholder="Numele" required>
+            </div>
+            <div class="inputBox">
+                <!-- <label>Prenume</label>  -->
+                <input type="text" name="pnume" pattern="^[A-Z][a-z]{6,}$" placeholder="Prenumele" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="inputBox">
+                <!--<label>Username</label> -->
+                <input type="text" name="user" pattern="^(?=(?:.*[A-Z].*){2})(?!(?:.*[A-Z].*){3,})(?=.{4,}[a-z]).{6,}$" placeholder="Username" required>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="inputBox">
+                <!--<label>E-mail</label> -->
+                <input type="email" name="mail" placeholder="Example@gmail.com" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="inputBox">
+            <!-- <label>Password</label> -->
+                <input type="Password" name="pass" pattern="^(?=(?:.*[A-Z].*){1})(?=.{2,}[0-9])(?=.*[#!@$%^&]).{8,}$" placeholder="Password" required>
+            </div>
+            <div class="inputBox">
+                <!--<label>Confirm Password</label> -->
+                <input type="Password" name="passv" placeholder="Verify password" required>
+            </div>
+        </div>
+
+        
+        <div class="btnReg">
+            <button class="btn" onclick="return validateForm()">Register</button>
+        </div>
+
+    </form>
+
+</section>
+
+    
+</body>
+
+</html>
